@@ -22,7 +22,7 @@ class Ravel(BaseEstimator, TransformerMixin):
         pass
 
     def fit(self, X, y=None):
-        return X.ravel()
+        return self
 
     def transform(self, X, y=None):
-        return self
+        return X.ravel()
